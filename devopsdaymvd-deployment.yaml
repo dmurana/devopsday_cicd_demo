@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsdaymvd-deploy
+  labels:
+    app: devopsdaymvd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devopsdaymvd
+  template:
+    metadata:
+      labels:
+        app: devopsdaymvd
+    spec:
+      containers:
+      - name: devopsdaymvd-c01
+        image: atdmurana/demos:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+

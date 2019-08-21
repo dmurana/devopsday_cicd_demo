@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: devopsdaymvd
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: devopsdaymvd.lab.at.uy
+    http:
+      paths:
+        - path: /
+          backend:
+            serviceName: devopsdaymvd-service
+            servicePort: 80

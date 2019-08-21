@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: devopsdaymvd-service
+spec:
+  selector:
+    app: devopsdaymvd
+  ports:
+   - port: 80
