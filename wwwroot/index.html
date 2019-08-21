@@ -1,10 +1,51 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>DevOpsDay Mvd Demo Site</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <h2>This is a demo site for DevOpsDay Mvd :-)</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Windows Template</title>
+</head>
+<body>
+	<div id="desktop">
+		<div class="window closed" data-title="First">
+			<h1>About technologies</h1>
+			<p>This site has been deployed using <a href="https://github.com/">GitHub</a>, <a href="https://jenkins.io/">Jenkins</a> and <a href="https://cloud.vmware.com/vmware-cloud-pks">VMware Cloud PKS</a> (formerly known as VKE).</p>
+			<hr />
+			<p>The code is available on <strong><a href="https://github.com/dmurana/devopsday_cicd_demo">github.com/dmurana/devopsday_cicd_demo</a></strong></p>
+		</div>
+		<div class="window" data-title="Second">
+			<h1>About AT Innovando Juntos</h1>
+			<p>At <a href="https://www.at.uy/">AT Innovando Juntos</a> we work with cloud computing, network virtualization, business continuity, DevOps, end-user computing and other interesting and innovative stuff.</p>
+			<p>If you are interested in some of these topics, do not hesitate to ask us!</p>
+			<hr />
+			<img src="logo.png" />
+		</div>
+		</div>
+		<div class="window" data-title="Welcome">
+			<h1>Welcome</h1>
+			<p>This is a simple demo website created to demonstrate how Kubernetes and CI/CD works.</p>
+			<hr />
+			<p>It has been based on the free HTML5 template called "Windows", published on HTML5-Templates.com</p>
+		</div>
+		
+		<div id="taskbar">		
+		</div>
+		
+		<div id="icons">
+			<a class="openWindow" data-id="0">About technologies</a>
+			<a class="openWindow" data-id="1">About AT Innovando Juntos</a>
+			<a class="openWindow" data-id="2">Welcome</a>
+		</div>
+		<a href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy; HTML5-Templates.com</a>	
+		<!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
+	</div>
+</body>
+
 </html>
